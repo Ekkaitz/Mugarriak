@@ -1,0 +1,18 @@
+C++ is a high-level, object-oriented programming language that was developed in the 1980s as an extension of
+the C programming language. It was designed to provide a more powerful and flexible language than C, while
+still maintaining the speed and efficiency of compiled languages. C++ is widely used for developing desktop
+software, games, operating systems, and more. It is known for its performance, efficiency, and control over
+system resources, which make it suitable for building low-level systems and applications.
+
+C++ also has a large and active community of developers, who have created a wide range of libraries, frameworks,
+and tools that can be used to enhance the language's capabilities. C++ is a compiled language, meaning that the source
+code is compiled into machine code that can be executed directly by the computer's processor. This makes it
+faster than interpreted languages like Python and Ruby, but also more complex to work with than languages
+like Java that use a virtual machine. C++ is known for its support for low-level programming constructs like
+pointers, memory management, and direct access to hardware. It also provides support for object-oriented
+programming, which allows developers to create reusable code that can be organized into classes and objects.
+
+
+C++ has evolved over time, with new features and improvements added in each new release. The language is
+maintained and developed by the ISO C++ Standards Committee, who provide support and resources for developers.
+C++ is free and open-source, which makes it accessible to anyone who wants to learn and use it.

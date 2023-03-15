@@ -1,0 +1,19 @@
+Java is a high-level, object-oriented programming language that was first released in 1995 by Sun Microsystems.
+It is designed to be portable and platform-independent, meaning that code written in Java can run on any platf
+-orm that has a Java Virtual Machine (JVM) installed, without the need for recompilation.Java is widely used f
+-or developing web applications, mobile apps, desktop software, games, and more. One of the main reasons for i
+-ts popularity is its scalability and robustness, which make it suitable for building large-scale, complex sys
+-tems. Java also has a large and active community of developers, who have created a vast ecosystem of libraries.
+
+
+Frameworks, and tools that can be used to enhance the language's capabilities. Java is known for its strong type
+ checking and safety features, which help to prevent common programming errors such as null pointer exceptions 
+and type mismatches. It also has built-in memory management through garbage collection, which frees developers 
+from having to manage memory allocation and deallocation manually. Java is a compiled language, which means that 
+the source code is compiled into byte code that can be executed on any platform with a JVM.
+
+
+Than interpreted languages like Python and Ruby, but slower than compiled languages like C++. Java has evolved
+over time, with new features and improvements added in each new release. The language is maintained and developed
+by Oracle Corporation, who provide support and resources for developers. Java is free and open-source, which makes
+it accessible to anyone who wants to learn and use it.
