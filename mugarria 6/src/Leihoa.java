@@ -58,8 +58,6 @@ public class Leihoa extends JFrame {
         bibi = new JPanel();
         irudia = new JLabel();
 
-
-
         bibi.add(irudia);
 
         //framera sartzen
@@ -83,19 +81,22 @@ public class Leihoa extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 String url;
-                url="./img/"+jList.getSelectedValue().toString()+".jpg";
+                url="./mugarria 6/img/"+jList.getSelectedValue().toString()+".jpg";
 
                 if(e.getClickCount()==2){
+
+                    con.bisitakEguneratu(jList.getSelectedValue().toString());
                     ImageIcon image = new ImageIcon(url);
                     Image image1= image.getImage();
                     image1.getScaledInstance(300,300,Image.SCALE_SMOOTH);
                     ImageIcon imageIcon=new ImageIcon(image1);
 
-                    irudia.setIcon(imageIcon);
+                    irudia.setIcon(image);
 
                 };
             }
         });
+
 
 
     }

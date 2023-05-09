@@ -57,6 +57,7 @@ public class Konexioa {
     public DefaultListModel zerrendaBete(String artista, Date data){
         DefaultListModel <Picture> modelList =new DefaultListModel<>();
 
+
         String selecta="select * from pictures where photographer_id= (select photographer_id from photographers where name= ?) and fecha < ?";
 
         PreparedStatement preparedStatement;
@@ -85,6 +86,23 @@ public class Konexioa {
         }
 
         return modelList;
+
+    }
+
+    public void bisitakEguneratu(String izena){
+        String update="update pictures set visits= visits +1 where pictures.title= ? ";
+        PreparedStatement preparedStatement;
+
+        try {
+            preparedStatement= konexioa.prepareStatement(update);
+            preparedStatement.setString(1,izena);
+            preparedStatement.executeUpdate();
+
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
 
     }
 
