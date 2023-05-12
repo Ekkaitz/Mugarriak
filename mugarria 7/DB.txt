@@ -1,0 +1,35 @@
+create database mugarria6;
+
+create table Pictures(
+	picture_id int,
+    title varchar(50),
+    fecha date,
+    file varchar(20),
+    visits int,
+    photographer_id int,
+primary key(picture_id));
+
+create table photographers(
+photographer_id int,
+name varchar(20),
+awarded int,
+primary key(photographer_id));
+
+INSERT INTO Pictures (picture_id, title, fecha, file, visits, photographer_id)
+VALUES
+  (1, 'Sunset', '2022-05-12', 'sunset.jpg', 0, 1),
+  (2, 'Mountain', '2022-04-27', 'mountain.jpg', 0, 2),
+  (3, 'City', '2022-04-10', 'city.jpg', 0, 3),
+  (4, 'Portrait', '2022-05-01', 'cat.jpg', 0, 1),
+  (5, 'Ocean', '2022-06-05', 'ocean.jpg', 0, 2),
+  (6, 'Historic', '2022-06-20', 'building.jpg', 0, 3);
+
+INSERT INTO photographers (photographer_id, name, awarded)
+VALUES
+  (1, 'John Smith', 0),
+  (2, 'Sarah Johnson', 0),
+  (3, 'David Lee', 0);
+  
+  ALTER TABLE Pictures ADD CONSTRAINT fk_photographer
+FOREIGN KEY (photographer_id)
+REFERENCES photographers(photographer_id);
